@@ -4,7 +4,9 @@ import { MenuItem } from "./MenuItem";
 const link = [
   { name: "Home", link: "/" },
   { name: "lifecycle", link: "/lifecycle" },
-  { name: "form-regis", link: "/news" },
+  { name: "hooks", link: "/hooks" },
+  { name: "form-regis", link: "/form" },
+  { name: "redux-task", link: "/count" },
 ];
 const variants = {
   open: {

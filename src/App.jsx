@@ -1,15 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePage, NewsPage,RegisterPage } from "./pages";
+import { HomePage,RegisterPage, ReduxTaskPage, LifecyclePage } from "./pages";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import HooksPage from "./pages/hooks";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/lifecycle" element={<NewsPage />} />
+        <Route path="/lifecycle" element={<LifecyclePage />} />
+        <Route path="/hooks" element={<HooksPage />} />
         <Route path="/auth" element={<RegisterPage />} />
+        <Route path="/count" element={<ReduxTaskPage />} />
       </Routes>
       <ToastContainer
         position="bottom-center"

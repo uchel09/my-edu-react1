@@ -40,12 +40,30 @@ const Navbar = () => {
             </li>
             <li
               className={`hover:text-red-400 ${
-                pathname === "/form"
+                pathname === "/hooks"
+                  ? "text-red-500 text-[18px]"
+                  : "text-black"
+              } font-bold`}
+            >
+              <Link to="/hooks">Hooks</Link>
+            </li>
+            <li
+              className={`hover:text-red-400 ${
+                pathname === "/auth"
                   ? "text-red-500 text-[18px]"
                   : "text-black"
               } font-bold`}
             >
               <Link to="/auth">form-regis</Link>
+            </li>
+            <li
+              className={`hover:text-red-400 ${
+                pathname === "/count"
+                  ? "text-red-500 text-[18px]"
+                  : "text-black"
+              } font-bold`}
+            >
+              <Link to="/count">redux-task</Link>
             </li>
           </ul>
         </div>

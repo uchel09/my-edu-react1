@@ -1,5 +1,7 @@
 import HomePage from "./home";
-import NewsPage from "./news";
+import HooksPage from "./hooks";
 import RegisterPage from "./auth-register";
+import ReduxTaskPage from "./redux-task";
+import LifecyclePage from "./lifecycle";
 
-export { HomePage, NewsPage, RegisterPage };
+export { HomePage, HooksPage, RegisterPage, ReduxTaskPage, LifecyclePage };

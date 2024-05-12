@@ -3,7 +3,7 @@ import BaseLayout from "../../components/layouts/BaseLayout";
 import axios from "axios";
 import CardNews from "../../components/element/CardNews";
 
-const NewsPage = () => {
+const HooksPage = () => {
   const [query, setQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -72,4 +72,4 @@ const NewsPage = () => {
   );
 };
 
-export default NewsPage;
+export default HooksPage;
